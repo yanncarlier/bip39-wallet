@@ -192,6 +192,8 @@ document.getElementById('load').addEventListener('click', async (event) => {
     try {
         const mnemonic = await window.electronAPI.loadMnemonic(password);
         phrase.value = mnemonic;
+        // Trigger the input event to populate all derived fields
+        $(phrase).trigger('input');
         status.textContent = 'Loaded successfully.';
     } catch (err) {
         status.textContent = err.message;
