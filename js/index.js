@@ -142,7 +142,7 @@
 
     function init() {
         // Events
-        DOM.privacyScreenToggle.on("change", privacyScreenToggled);
+        DOM.privacyScreenToggle.on("click", privacyScreenToggled);
         DOM.generatedStrength.on("change", generatedStrengthChanged);
         DOM.network.on("change", networkChanged);
         DOM.bip32Client.on("change", bip32ClientChanged);
@@ -237,7 +237,7 @@
     }
 
     function isUsingAutoCompute() {
-        return DOM.autoCompute.prop("checked");
+        return true;
     }
 
     function setEntropyVisibility() {
@@ -668,11 +668,12 @@
     function privacyScreenToggled() {
         // private-data contains elements added to DOM at runtime
         // so catch all by adding visual privacy class to the root of the DOM
-        if (DOM.privacyScreenToggle.prop("checked")) {
-            $("body").addClass("visual-privacy");
-        }
-        else {
-            $("body").removeClass("visual-privacy");
+        $("body").toggleClass("visual-privacy");
+        var isHidden = $("body").hasClass("visual-privacy");
+        if (isHidden) {
+            DOM.privacyScreenToggle.text("Show private info");
+        } else {
+            DOM.privacyScreenToggle.text("Hide private info");
         }
     }
 
