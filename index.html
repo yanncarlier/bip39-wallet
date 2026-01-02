@@ -21,9 +21,9 @@
 
     <body class="visual-privacy">
         <div class="container">
-            <h1 class="text-center">BIP39-Wallet</h1>
-            <p class="version">v0.5.65</p>
-            <hr>
+            <!-- <h1 class="text-center">BIP39-Wallet</h1> -->
+            <p class="version">BIP39-Wallet - v0.5.65</p>
+            <!-- <hr> -->
             <div class="row">
                 <div class="col-md-12">
                     <form class="form-horizontal" role="form">
@@ -250,12 +250,13 @@
 
 
                                                             <div class="form-group">
-                                    <label for="phrase" class="col-sm-2 control-label">Save Mnemonic</label>
+                                    <label for="phrase" class="col-sm-2 control-label">Store your mnemonic in the local browser vault, encrypted storage</label>
                                     <div class="col-sm-10">
                                         <input type="password" id="password" class="form-control"
                                             placeholder="Password">
-                                        <button id="save" type="button" class="btn generate">Save</button>
-                                        <button id="load" type="button" class="btn generate">Load</button>
+<br>
+                                        <button id="save" type="button" class="btn generate" style="margin-left: 10px;">Save to vault</button>
+                                        <button id="load" type="button" class="btn generate" style="margin-left: 10px;">Load from vault</button>
                                         <div id="status"></div>
                                     </div>
                                 </div>
