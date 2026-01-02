@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "serve": "npx http-server . -p 8000",
     "package": "electron-packager . bip39-wallet --platform=all --arch=all --out=dist --overwrite",
     "build": "electron-builder --linux"
   },
