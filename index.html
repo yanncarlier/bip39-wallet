@@ -33,33 +33,43 @@
                             </div>
                         </div>
                         <div class="form-group generate-container">
-                            <label class="col-sm-2 control-label"></label>
+                            <div class="col-sm-2"></div>
                             <div class="col-sm-10">
-                                <div class="form-inline">
-                                    <div class="input-group-inline">
-                                        <button class="btn generate"><b>GENERATE</b></button>
-                                        <select id="strength" class="strength form-control">
-                                            <option value="3">3</option>
-                                            <option value="6">6</option>
-                                            <option value="9">9</option>
-                                            <option value="12">12</option>
-                                            <option value="15" selected>15</option>
-                                            <option value="18">18</option>
-                                            <option value="21">21</option>
-                                            <option value="24">24</option>
-                                        </select>
-                                        <span>words random mnemonic, or enter your own below</span>.
-                                        <p class="warning help-block hidden">
-                                            <span class="text-danger">
-                                                Mnemonics with less than 12 words have low entropy and may be
-                                                guessed by
-                                                an attacker.
-                                            </span>
-                                        </p>
-                                    </div>
+                                <button class="btn generate"><b>Generate Mnemonic</b></button>
+                                
+                                <select id="strength" class="strength form-control">
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+                                    <option value="15" selected>15</option>
+                                    <option value="18">18</option>
+                                    <option value="21">21</option>
+                                    <option value="24">24</option>
+                                </select>
+                                <span>words random mnemonic, or enter your own below</span>.
+                                <p class="warning help-block hidden">
+                                    <span class="text-danger">
+                                        Mnemonics with less than 12 words have low entropy and may be
+                                        guessed by
+                                        an attacker.
+                                    </span>
+                                </p>
+                            </div>
+
+
+                            
+                        </div>
+
+                                                    <div class="form-group">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-10">
+                                    <button type="button" class="privacy-screen-toggle btn">Show private info</button>
                                 </div>
                             </div>
-                        </div>
+
+
+                            
                         <div class="entropy-container hidden">
                             <div class="form-group text-danger">
                                 <label class="col-sm-2 control-label">Warning</label>
@@ -195,12 +205,12 @@
                                 </label>
                             </div>
                         </div> -->
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <div class="col-sm-2"></div>
                                 <div class="col-sm-10">
                                     <button type="button" class="privacy-screen-toggle btn">Show private info</button>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">Mnemonic Language</label>
@@ -294,7 +304,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="root-key" class="col-sm-2 control-label">BIP32 Root Key</label>
+                                <label for="root-key" class="col-sm-2 control-label private-data">BIP32 Root Key</label>
                                 <div class="col-sm-10">
                                     <textarea id="root-key" class="root-key private-data form-control" data-show-qr
                                         autocomplete="off" autocorrect="off" autocapitalize="off"
