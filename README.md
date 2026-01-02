@@ -2,7 +2,7 @@
 
 A BIP39 Wallet Application built with Electron.
 
-This project is a derivative work, inspired by and built upon the original code from the repository at https://github.com/iancoleman/bip39. The application, bip39-app, serves as a wrapper around this codebase, adapting it for cross-platform use.
+This project is a derivative work, inspired by and built upon the original code from the repository at https://github.com/iancoleman/bip39. 
 
 Use at Your Own Risk
 This is experimental/beta software. It may contain bugs or cause unexpected behavior.
