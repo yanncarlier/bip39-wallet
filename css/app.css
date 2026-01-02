@@ -1,8 +1,7 @@
 /* General body styles */
 body {
     padding-bottom: 32px;
-     /* background-color: #1C2526; */ /* Dark background */
-     background-color: #300924;
+    background-color: #1C2526; /* Dark background */
     color: #E0E0E0; /* Light text */
 }
 
@@ -43,9 +42,9 @@ a:hover {
 .form-control:focus {
     background-color: #2D3839;
     color: #E0E0E0;
-    border-color: #300924; /* Bright blue for focus */
+    border-color: #888; /* Gray for focus */
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(77, 168, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(136, 136, 136, 0.25);
 }
 
 .form-control::placeholder {
@@ -245,7 +244,7 @@ table th,
 }
 
 .table-hover tbody tr:hover {
-    background-color: #300924; /* Blue hover effect */
+    background-color: #888; /* Gray hover effect */
     color: #E0E0E0;
 }
 
@@ -274,20 +273,20 @@ table thead th,
 }
 
 .btn:hover {
-    background-color: #300924;
+    background-color: #888;
     color: #E0E0E0;
-    border-color: #300924;
+    border-color: #888;
 }
 
 .btn-primary {
-    background-color: #300924;
-    border-color: #300924;
+    background-color: #888;
+    border-color: #888;
     color: #E0E0E0;
 }
 
 .btn-primary:hover {
-    background-color: #300924;
-    border-color: #300924;
+    background-color: #999;
+    border-color: #999;
 }
 
 /* Toggle button styles */
@@ -310,9 +309,9 @@ input[type="checkbox"].switch {
 .btn-toggle:hover,
 input[type="checkbox"].toggle:hover,
 input[type="checkbox"].switch:hover {
-    background-color: #300924; /* Blue hover */
+    background-color: #888; /* Gray hover */
     color: #E0E0E0;
-    border-color: #300924;
+    border-color: #888;
 }
 
 .toggle:checked,
@@ -320,9 +319,9 @@ input[type="checkbox"].switch:hover {
 .btn-toggle.active,
 input[type="checkbox"].toggle:checked,
 input[type="checkbox"].switch:checked {
-    background-color: #300924; /* Blue when checked/active */
+    background-color: #888; /* Gray when checked/active */
     color: #E0E0E0;
-    border-color: #300924;
+    border-color: #888;
 }
 
 .toggle:focus,
@@ -331,7 +330,7 @@ input[type="checkbox"].switch:checked {
 input[type="checkbox"].toggle:focus,
 input[type="checkbox"].switch:focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(77, 168, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(136, 136, 136, 0.25);
 }
 
 /* Optional: Custom toggle switch slider */
@@ -374,7 +373,7 @@ input[type="checkbox"].switch:focus {
 }
 
 .toggle-switch input:checked + .slider {
-    background-color: #300924; /* Blue on state */
+    background-color: #888; /* Gray on state */
 }
 
 .toggle-switch input:checked + .slider:before {
@@ -382,7 +381,7 @@ input[type="checkbox"].switch:focus {
 }
 
 .toggle-switch input:focus + .slider {
-    box-shadow: 0 0 0 0.2rem rgba(77, 168, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(136, 136, 136, 0.25);
 }
 
 .alert {
@@ -438,5 +437,5 @@ input[type="checkbox"].switch:focus {
     background-color: #2D3839; /* Matches tab content background */
     color: #E0E0E0; /* Light text */
     border-color: #555; /* Muted border */
-    border-bottom: 2px solid #300924; /* Blue indicator for active state */
+    border-bottom: 2px solid #888; /* Gray indicator for active state */
 }
