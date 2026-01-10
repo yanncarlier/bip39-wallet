@@ -9,9 +9,9 @@
     var network = libs.bitcoin.networks.bitcoin;
     var addressRowTemplate = $("#address-row-template");
 
-    var showIndex = true;
+    var showIndex = false;
     var showAddress = true;
-    var showPubKey = true;
+    var showPubKey = false;
     var showPrivKey = true;
     var showQr = false;
     var litecoinUseLtub = true;
@@ -196,6 +196,13 @@
         hideValidationError();
         populateNetworkSelect();
         populateClientSelect();
+        // Apply initial column visibility based on showIndex and showPubKey
+        if (!showIndex) {
+            $("td.index span").addClass("invisible");
+        }
+        if (!showPubKey) {
+            $("td.pubkey span").addClass("invisible");
+        }
     }
 
     // Event handlers
