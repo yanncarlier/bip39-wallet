@@ -26,6 +26,8 @@
 
     var DOM = {};
     DOM.privacyScreenToggle = $(".privacy-screen-toggle");
+    DOM.derivationPathToggle = $(".derivation-path-toggle");
+    DOM.derivationPathSection = $(".derivation-path-section");
     DOM.network = $(".network");
     DOM.bip32Client = $("#bip32-client");
     DOM.phraseNetwork = $("#network-phrase");
@@ -143,6 +145,7 @@
     function init() {
         // Events
         DOM.privacyScreenToggle.on("click", privacyScreenToggled);
+        DOM.derivationPathToggle.on("click", derivationPathToggled);
         DOM.generatedStrength.on("change", generatedStrengthChanged);
         DOM.network.on("change", networkChanged);
         DOM.bip32Client.on("change", bip32ClientChanged);
@@ -674,6 +677,16 @@
             DOM.privacyScreenToggle.text("Show private info");
         } else {
             DOM.privacyScreenToggle.text("Hide private info");
+        }
+    }
+
+    function derivationPathToggled() {
+        DOM.derivationPathSection.toggleClass("hidden");
+        var isHidden = DOM.derivationPathSection.hasClass("hidden");
+        if (isHidden) {
+            DOM.derivationPathToggle.text("Show Derivation Path");
+        } else {
+            DOM.derivationPathToggle.text("Hide Derivation Path");
         }
     }
 
